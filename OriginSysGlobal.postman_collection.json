@@ -1,0 +1,188 @@
+{
+	"info": {
+		"_postman_id": "b6723447-f275-43d1-88c5-76c3dc4db1dd",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27847314"
+	},
+	"item": [
+		{
+			"name": "inventories",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/inventories",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"inventories"
+					],
+					"query": [
+						{
+							"key": "hotel_name",
+							"value": "Rotana",
+							"disabled": true
+						},
+						{
+							"key": "city_name",
+							"value": "i",
+							"disabled": true
+						},
+						{
+							"key": "price_from",
+							"value": "80",
+							"disabled": true
+						},
+						{
+							"key": "price_to",
+							"value": "90",
+							"disabled": true
+						},
+						{
+							"key": "start_date",
+							"value": "10-10-2023",
+							"disabled": true
+						},
+						{
+							"key": "end_date",
+							"value": "15-10-2023",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "inventories",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/inventories",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"inventories"
+							],
+							"query": [
+								{
+									"key": "hotel_name",
+									"value": "Rotana",
+									"disabled": true
+								},
+								{
+									"key": "city_name",
+									"value": "i",
+									"disabled": true
+								},
+								{
+									"key": "price_from",
+									"value": "80",
+									"disabled": true
+								},
+								{
+									"key": "price_to",
+									"value": "90",
+									"disabled": true
+								},
+								{
+									"key": "start_date",
+									"value": "10-10-2023",
+									"disabled": true
+								},
+								{
+									"key": "end_date",
+									"value": "15-10-2023",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 21 Feb 2024 19:36:05 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 21 Feb 2024 19:36:05 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.2-1ubuntu2.14"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"inventories\",\n    \"data\": [\n        {\n            \"city\": \"dubai\",\n            \"name\": \"Media One Hotel\",\n            \"price\": 102.2,\n            \"availability\": [\n                {\n                    \"to\": \"15-10-2023\",\n                    \"from\": \"10-10-2023\"\n                },\n                {\n                    \"to\": \"15-11-2023\",\n                    \"from\": \"25-10-2023\"\n                },\n                {\n                    \"to\": \"15-12-2023\",\n                    \"from\": \"10-12-2023\"\n                }\n            ]\n        },\n        {\n            \"city\": \"cairo\",\n            \"name\": \"Rotana Hotel\",\n            \"price\": 80.6,\n            \"availability\": [\n                {\n                    \"to\": \"12-10-2023\",\n                    \"from\": \"10-10-2023\"\n                },\n                {\n                    \"to\": \"10-11-2023\",\n                    \"from\": \"25-10-2023\"\n                },\n                {\n                    \"to\": \"18-12-2023\",\n                    \"from\": \"05-12-2023\"\n                }\n            ]\n        },\n        {\n            \"city\": \"london\",\n            \"name\": \"Le Meridien\",\n            \"price\": 89.6,\n            \"availability\": [\n                {\n                    \"to\": \"12-10-2023\",\n                    \"from\": \"01-10-2023\"\n                },\n                {\n                    \"to\": \"10-11-2023\",\n                    \"from\": \"05-10-2023\"\n                },\n                {\n                    \"to\": \"28-12-2023\",\n                    \"from\": \"05-12-2023\"\n                }\n            ]\n        },\n        {\n            \"city\": \"paris\",\n            \"name\": \"Golden Tulip\",\n            \"price\": 109.6,\n            \"availability\": [\n                {\n                    \"to\": \"17-10-2023\",\n                    \"from\": \"04-10-2023\"\n                },\n                {\n                    \"to\": \"11-11-2023\",\n                    \"from\": \"16-10-2023\"\n                },\n                {\n                    \"to\": \"09-12-2023\",\n                    \"from\": \"01-12-2023\"\n                }\n            ]\n        },\n        {\n            \"city\": \"Vienna\",\n            \"name\": \"Novotel Hotel\",\n            \"price\": 111,\n            \"availability\": [\n                {\n                    \"to\": \"28-10-2023\",\n                    \"from\": \"20-10-2023\"\n                },\n                {\n                    \"to\": \"20-11-2023\",\n                    \"from\": \"04-11-2023\"\n                },\n                {\n                    \"to\": \"24-12-2023\",\n                    \"from\": \"08-12-2023\"\n                }\n            ]\n        },\n        {\n            \"city\": \"Manila\",\n            \"name\": \"Concorde Hotel\",\n            \"price\": 79.4,\n            \"availability\": [\n                {\n                    \"to\": \"19-10-2023\",\n                    \"from\": \"10-10-2023\"\n                },\n                {\n                    \"to\": \"22-11-2023\",\n                    \"from\": \"22-10-2023\"\n                },\n                {\n                    \"to\": \"20-12-2023\",\n                    \"from\": \"03-12-2023\"\n                }\n            ]\n        }\n    ],\n    \"status\": true,\n    \"code\": 200\n}"
+				}
+			]
+		}
+	]
+}
